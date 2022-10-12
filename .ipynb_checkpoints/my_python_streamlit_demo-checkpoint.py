@@ -3,6 +3,14 @@ import pandas as pd
 #import numpy  as np
 import altair as alt
 import matplotlib.pyplot as plt
+#%matplotlib inline
+#import time
+#from PIL import Image
+#import os
+
+#import time
+#from PIL import Image
+
 
 def main():
     #page = st.sidebar.selectbox("Wybierz stronę:", ["Homepage", "Analiza informacji", "Diagramy"])
@@ -150,18 +158,34 @@ def Print_df_indicators(df):
     #women_all = df[(df['Sex']== 'female')].shape[0]
     str_print = "* "+str(df[(df['Sex']== 'female')&(df["Survived"]==1)].shape[0]) + "  kobiet z  " + str(df[(df['Sex']== 'female')].shape[0]) + " przeżyło katastrofe."
     st.write(str_print)
+    #########df["Age"][df['Age'].isnull())].count()
+    #proc_wiek = round((df['Age'].count()- len(df["Age"][df['Age'].isnull()]))/df['Age'].count(),5) * 100
+    #proc_wiek = round( len(df["Age"][df['Age'].isnull()])/df['Age'].count(),5) * 100
+    #print(f"{proc_wiek}%  - osób ma uzupełnione dane o wieku")
     str_print = "* "+str(round( len(df["Age"][df['Age'].isnull()])/df['PassengerId'].count(),5) * 100) + "%  osób ma nie uzupełnione dane o wieku"
     st.write(str_print)
+    #proc_sexk = round( len(df["Sex"][df['Sex'].isnull()])/df['Sex'].count(),5) * 100
+    #print(f"{proc_wiek}%  - osób ma uzupełnione dane o wieku")
     str_print = "* "+str(round( len(df["Sex"][df['Sex'].isnull()])/df['PassengerId'].count(),5) * 100) + "%  osób ma nie uzupełnione dane o płci."
     st.write(str_print)
 
+
+    #str_print = '<p style="font-family:sans-serif; font-style:Italic; color:Blue; font-size: 20px;">Wiersze z pustym wiekiem i płcią zostały wykluczone z analizy.</p>'   
+    #st.markdown(str_print, unsafe_allow_html=True) 
+    # Cursive
+    #df = df.dropna(subset=['Age', 'Sex'])
+
+    #print(f"{round(df['Age'].mean(),3)} - średni wiek pasażerów")
     str_print = '* '+str(round(df['Age'].mean(),3)) + " - średni wiek pasażerów"
     st.write(str_print)
+    #print(f"{df['Age'].max()}   - maksymalny wiek pasażerów")
     str_print = '* '+str(round(df['Age'].max(),3)) + " - maksymalny wiek pasażerów"
     st.write(str_print)
+    #print(f"{df['Age'].min()}   - minimalny wiek pasażerów")
     str_print = '* '+str(round(df['Age'].min(),3)) + " - minimalny wiek pasażerów"
     st.write(str_print)
     man_proc = round(100*(df['PassengerId'][df['Sex']== 'male'].count()/df['PassengerId'].count()),3)
+    #print(f"Kobiet - {100 -man_proc}%,   mężczyzn - {man_proc}%.")            
     str_print = "* Kobiet - " + str(100 -man_proc) + "%,   mężczyzn - "+ str(man_proc) + "%."
     st.write(str_print)
 
