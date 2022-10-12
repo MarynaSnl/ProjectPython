@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 #import numpy  as np
 import altair as alt
-import matplotlib.pyplot as plt
 
 def main():
     #page = st.sidebar.selectbox("Wybierz stronę:", ["Homepage", "Analiza informacji", "Diagramy"])
@@ -64,9 +63,15 @@ def main():
         #str_print = '<p style="font-family:sans-serif; font-weight: bold; color:DarkGray; font-size: 24px;">Według wieku:</p>'   
         #st.markdown(str_print, unsafe_allow_html=True)    
 
-        str_print = '<p style="font-family:sans-serif; font-weight: bold; color:DarkGray; font-size: 24px;">Wykresy z filtrowaniem według wieku:</p>'   
+        str_print = '<p style="font-family:sans-serif; font-weight: bold; color:DarkGray; font-size: 24px;">Wykresy z filtrowaniem według wieku.</p>'   
         st.markdown(str_print, unsafe_allow_html=True)    
-       
+        str_print = '<p style="font-family:sans-serif;  font-style:Italic; color:DarkGray; font-size: 20px;">Wiersze z pustym wiekiem zostały wykluczone z analizy.</p>'   
+        st.markdown(str_print, unsafe_allow_html=True)    
+        #str_print = '<p style="font-family:sans-serif; font-style:Italic; color:Green; font-size: 16px;">Wiersze z pustym wiekiem i płcią zostały wykluczone z analizy.</p>'
+        #st.markdown(str_print, unsafe_allow_html=True)
+        df = df.dropna(subset=['Age'])
+  
+
         max_age = int(df['Age'].max() + 1)
         min_age = 0
         col1, col2 = st.columns(2)    
@@ -102,6 +107,13 @@ def load_data():
 def visualize_data2(df, min_age, max_age):
     
     #st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_tick().encode(color='count(Survived)',     y='Sex',     x='Age', #).transform_calculate(Survived='datum.Survived == 1 ? "Yes" : "No"'))
+
+    col1, col2 = st.columns(2)    
+    with col1:
+        st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode( x='Sex:O', y=alt.Y('count():Q',  title='łącznie osób'), color=alt.Color('Survived:O' )).properties(title='Pasażerowie.',     width=350,    height=250).transform_calculate(Survived='datum.Survived == 1 ? "Yes" : "No"'))
+    with col2:
+        st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode(y=alt.Y('Survived:N',title="  "),color="Survived:N",x= alt.X('count(Survived):Q',  title='łącznie osób')).properties(title='Pasażerowie.',     width=450,    height=220).transform_calculate(Survived='datum.Survived == 1 ? datum.Sex + " saved" : datum.Sex + " not saved"'))
+ 
     
     st.write(alt.Chart(df[(df['Sex']== 'female')&(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode(   alt.Y('count()', title='łącznie osób') ,   x='Age' , color=alt.Color('Survived:N' )  ).properties(title='Wykres ocalałych i nieocalonych pasażerów płci żeńskiej.',  width=800,    height=250).transform_calculate(Survived='datum.Survived == 1 ? "Yes" : "No"').interactive())
  
@@ -138,23 +150,17 @@ def Print_df_indicators(df):
     str_print = '<p style="font-family:sans-serif; color:Green; font-size: 28px;">♟ General Statistics ♟:</p>'
     st.markdown(str_print, unsafe_allow_html=True)
     #st.markdown("**♟ General Statistics ♟**")
-    
-    #men_survived = df[(df['Sex']== 'male')&(df["Survived"]==1)].shape[0]
-    #men_all = df[(df['Sex']== 'male')].shape[0]
-    #print(f"{men_survived} mężczyzn z {men_all} przeżyło katastrofę")
-    str_print = "* "+str(df[(df['Sex']== 'male')&(df["Survived"]==1)].shape[0]) + " mężczyzn z " + str(df[(df['Sex']== 'male')].shape[0]) + " przeżyło katastrofę."
-    st.write(str_print)
- 
-    
-    #women_survived = df[(df['Sex']== 'female')&(df["Survived"]==1)].shape[0]
-    #women_all = df[(df['Sex']== 'female')].shape[0]
-    str_print = "* "+str(df[(df['Sex']== 'female')&(df["Survived"]==1)].shape[0]) + "  kobiet z  " + str(df[(df['Sex']== 'female')].shape[0]) + " przeżyło katastrofe."
-    st.write(str_print)
     str_print = "* "+str(round( len(df["Age"][df['Age'].isnull()])/df['PassengerId'].count(),5) * 100) + "%  osób ma nie uzupełnione dane o wieku"
     st.write(str_print)
     str_print = "* "+str(round( len(df["Sex"][df['Sex'].isnull()])/df['PassengerId'].count(),5) * 100) + "%  osób ma nie uzupełnione dane o płci."
     st.write(str_print)
-
+     
+    str_print = "* "+str(df[(df['Sex']== 'male')&(df["Survived"]==1)].shape[0]) + " mężczyzn z " + str(df[(df['Sex']== 'male')].shape[0]) + " przeżyło katastrofę."
+    st.write(str_print)
+ 
+    str_print = "* "+str(df[(df['Sex']== 'female')&(df["Survived"]==1)].shape[0]) + "  kobiet z  " + str(df[(df['Sex']== 'female')].shape[0]) + " przeżyło katastrofe."
+    st.write(str_print)
+   
     str_print = '* '+str(round(df['Age'].mean(),3)) + " - średni wiek pasażerów"
     st.write(str_print)
     str_print = '* '+str(round(df['Age'].max(),3)) + " - maksymalny wiek pasażerów"
