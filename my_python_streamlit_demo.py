@@ -112,7 +112,7 @@ def visualize_data2(df, min_age, max_age):
     with col1:
         st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode( x='Sex:O', y=alt.Y('count():Q',  title='łącznie osób'), color=alt.Color('Survived:O' )).properties(title='Pasażerowie.',     width=350,    height=250).transform_calculate(Survived='datum.Survived == 1 ? "Yes" : "No"'))
     with col2:
-        st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode(y=alt.Y('Survived:N',title="  "),color="Survived:N",x= alt.X('count(Survived):Q',  title='łącznie osób')).properties(title='Pasażerowie.',     width=450,    height=220).transform_calculate(Survived='datum.Survived == 1 ? datum.Sex + " saved" : datum.Sex + " not saved"'))
+        st.write(alt.Chart(df[(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode(y=alt.Y('Survived:N',title="  "),color="Survived:N",x= alt.X('count(Survived):Q',  title='łącznie osób')).properties(title='Pasażerowie.',     width=450,    height=210).transform_calculate(Survived='datum.Survived == 1 ? datum.Sex + " saved" : datum.Sex + " not saved"'))
  
     
     st.write(alt.Chart(df[(df['Sex']== 'female')&(df['Age'] >=min_age)&(df['Age'] <=max_age)]).mark_bar().encode(   alt.Y('count()', title='łącznie osób') ,   x='Age' , color=alt.Color('Survived:N' )  ).properties(title='Wykres ocalałych i nieocalonych pasażerów płci żeńskiej.',  width=800,    height=250).transform_calculate(Survived='datum.Survived == 1 ? "Yes" : "No"').interactive())
