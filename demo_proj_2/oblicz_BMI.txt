@@ -1,2 +1,0 @@
-Massa=234,wzrost=345sm,BMI=19.66
-Massa=231,wzrost=678sm,BMI=5.03
