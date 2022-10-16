@@ -2,10 +2,9 @@
 
 <hr>
 Data analysis, link:
-=======
+
 https://marynasnl-my-demo-proj-my-python-streamlit-demo-lbtcpv.streamlitapp.com/
-=======
-=======
+
 <hr>
 
 
