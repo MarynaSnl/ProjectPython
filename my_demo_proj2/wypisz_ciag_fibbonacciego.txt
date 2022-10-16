@@ -1,1 +1,8 @@
-ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,ciag fibbonacciego od 0-0,ciag fibbonacciego od 1-0,1,ciag fibbonacciego od 7-0,1,1,2,3,5,8,13,
+
+ciag fibbonacciego od 0-0
+ciag fibbonacciego od 1-0,1
+ciag fibbonacciego od 2-0,1,1
+ciag fibbonacciego od 3-0,1,1,2
+ciag fibbonacciego od 4-0,1,1,2,3
+ciag fibbonacciego od 5-0,1,1,2,3,5
+ciag fibbonacciego od 10-0,1,1,2,3,5,8,13,21,34,55

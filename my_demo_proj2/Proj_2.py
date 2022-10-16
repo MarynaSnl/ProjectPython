@@ -1,6 +1,7 @@
 import math
-import pandas as pd
 import os as os
+import pandas as pd
+
 
 class Pracownik:
     def __init__(self, nazwa):
@@ -113,7 +114,8 @@ def wczytaj_dane(nazwa_pliku):
     try:
         df = pd.read_csv(nazwa_pliku, header=None, sep=",")
     except:
-        print(f"Nie znaleziono pliku: {nazwa_pliku}")
+        print(f"Nie znaleziono pliku: {nazwa_pliku}.  Dane testowe zostały wygenerowany do testowania."
+              f"")
         df = stworz_test_df()
     return df
 
@@ -121,21 +123,26 @@ def wczytaj_dane(nazwa_pliku):
 def dobaj_do_pliku(df_str, f_path, *args ):
     #print(type(df_str))
     with open(os.path.join(os.getcwd(), f_path),'a') as outfile:
+        outfile.write("\n")
         if len(args) > 0:
             for arg in args:
                 outfile.write(str(arg))
         if (isinstance(df_str, str)):
             outfile.write(df_str)
         elif (isinstance(df_str, (list,set,tuple))):
-            for x in df_str:
-                outfile.write(str(x)+',')
+            dl = len(df_str)
+            for index, x  in enumerate(df_str):
+                if dl == index + 1:
+                    outfile.write(str(x))
+                else:
+                    outfile.write(str(x)+',')
         elif (isinstance(df_str, (int,float ))):    
             outfile.write(str(x)+',')  
         elif isinstance(df_str, pd.DataFrame):    
-            outfile.write("\n")
             df.to_string(outfile)
 
-if __name__ == '__main__':            
+
+def main():    
     print("1 - naukowec\n2 - inżynier.\n")
     pracownik = 0
     for i in range(3):
@@ -173,4 +180,6 @@ if __name__ == '__main__':
             df = wczytaj_dane("test_file.csv")
         
             dobaj_do_pliku(df["promien"].apply(new_pracownik.oblicz_pole_i_obwod_okregu) , "oblicz_procent_liczbu.txt")       
-    
+
+if __name__ == '__main__':  
+    main()
