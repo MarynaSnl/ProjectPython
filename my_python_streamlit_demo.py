@@ -14,7 +14,7 @@ def main():
     
     title_page = '<p style="font-family:sans-serif; color:DarkBlue; font-weight: bold; font-size: 30px;">Wybierz stronę:</p>'
     st.sidebar.markdown(title_page, unsafe_allow_html=True)
-    page = st.sidebar.radio('', ['Dane do eksploracj', 'Eksploracja danych', 'Analiza wizualna'])    
+    page = st.sidebar.radio('', ['Dane do eksploracj', 'Analiza wizualna', 'Eksploracja danych'])    
     max_age = 120
     min_age = 0
     if (df is None) | (df.empty):
@@ -27,18 +27,6 @@ def main():
             Print_df_indicators(df)
         else:
             st.write("**Plik 'trane.csv' nie jest załadowany, musisz wgrać plik.**")  
-
-    elif page == "Eksploracja danych":
-        if not ((df is None) | (df.empty)) :
-            #st.title("Analiza informacji")
-            title_df = '<p style="font-family:sans-serif; color:DarkBlue; font-size: 42px;">Eksploracja danych:</p>'
-            st.markdown(title_df, unsafe_allow_html=True)
-            x_axis = st.selectbox("Choose a variable for the x-axis",  df.columns, index=5)
-            y_axis = st.selectbox("Choose a variable for the y-axis",  df.columns, index=6)
-            visualize_data(df, x_axis, y_axis)
-        else:
-            st.write("**Plik 'trane.csv' nie jest załadowany, musisz wgrać plik.**")  
-            
             
     elif page == "Analiza wizualna":
         if (df is None) | (df.empty):
@@ -94,6 +82,18 @@ def main():
                 visualize_data2(df, min_age, max_age)
         else:
             visualize_data2(df, 0, int(df['Age'].max() + 1))
+
+    elif page == "Eksploracja danych":
+        if not ((df is None) | (df.empty)) :
+            #st.title("Analiza informacji")
+            title_df = '<p style="font-family:sans-serif; color:DarkBlue; font-size: 42px;">Eksploracja danych:</p>'
+            st.markdown(title_df, unsafe_allow_html=True)
+            x_axis = st.selectbox("Choose a variable for the x-axis",  df.columns, index=5)
+            y_axis = st.selectbox("Choose a variable for the y-axis",  df.columns, index=6)
+            visualize_data(df, x_axis, y_axis)
+        else:
+            st.write("**Plik 'trane.csv' nie jest załadowany, musisz wgrać plik.**")  
+            
         
         
 @st.cache
