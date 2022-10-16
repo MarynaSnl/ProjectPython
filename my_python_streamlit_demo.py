@@ -53,11 +53,11 @@ def main():
 
         str_print = '<p style="font-family:sans-serif; font-weight: bold; color:DarkGray; font-size: 24px;">Wykresy z filtrowaniem według wieku.</p>'   
         st.markdown(str_print, unsafe_allow_html=True)    
-        str_print = '<p style="font-family:sans-serif;  font-style:Italic; color:DarkGray; font-size: 20px;">Wiersze z pustym wiekiem zostały wykluczone z analizy.</p>'   
+        str_print = '<p style="font-family:sans-serif;  font-style:Italic; color:DarkGray; font-size: 20px;">Wiersze z pustym wiekiem, pustą płcią zostały wykluczone z analizy.</p>'   
         st.markdown(str_print, unsafe_allow_html=True)    
         #str_print = '<p style="font-family:sans-serif; font-style:Italic; color:Green; font-size: 16px;">Wiersze z pustym wiekiem i płcią zostały wykluczone z analizy.</p>'
         #st.markdown(str_print, unsafe_allow_html=True)
-        df = df.dropna(subset=['Age'])
+        df = df.dropna(subset=['Age', 'Sex'])
   
 
         max_age = int(df['Age'].max() + 1)
