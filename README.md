@@ -3,7 +3,7 @@
 <hr>
 Data analysis, link:
 
-https://marynasnl-my-demo-proj-my-python-streamlit-demo-lbtcpv.streamlitapp.com/
+https://marynasnl-my-demo-proj-my-python-streamlit-demo-1hkvpo.streamlitapp.com/
 
 <hr>
 
