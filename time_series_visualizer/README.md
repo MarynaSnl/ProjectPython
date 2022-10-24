@@ -18,11 +18,11 @@ For each chart, make sure to use a copy of the data frame.
 
 - [time_series_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/time_series_visualizer.py) - Solution.
 
-- [line_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Line plot.
+- [line_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/line_plot.png)  - Line plot.
 
-- [box_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Box plot.
+- [box_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/box_plot.png)  - Box plot.
 
-- [bar_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Bar plot.
+- [bar_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/bar_plot.png)  - Bar plot.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Screenshot of testing results.
 
