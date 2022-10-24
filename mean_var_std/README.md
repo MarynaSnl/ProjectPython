@@ -34,7 +34,7 @@ For example, calculate([0,1,2,3,4,5,6,7,8]) should return:
 
 - [mean_var_std.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/mean_var_std/mean_var_std.py) - Solution.
 
-- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
+- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/mean_var_std/screen_test.png)  - Screenshot of testing results.
 
 
 
