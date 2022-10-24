@@ -1,4 +1,4 @@
-# Link for  'my_python_streamlit_demo,py'
+# Link for  'my_python_streamlit_demo.py'
 
 <hr>
 Napisz program do analizy danych.
