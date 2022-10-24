@@ -1,27 +1,26 @@
-# Demographic Data Analyzer
+# Sea Level Predictor
 
 <hr>
-In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
-You must use Pandas to answer the following questions:
+You will analyze a dataset of the global average sea level change since 1880. You will use the data to predict the sea level change through year 2050.
 
-    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
-    What is the average age of men?
-    What is the percentage of people who have a Bachelor's degree?
-    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
-    What percentage of people without advanced education make more than 50K?
-    What is the minimum number of hours a person works per week?
-    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
-    What country has the highest percentage of people that earn >50K and what is that percentage?
-    Identify the most popular occupation for those who earn >50K in India.
+Use the data to complete the following tasks::
+
+    
+    Use Pandas to import the data from epa-sea-level.csv.
+    Use matplotlib to create a scatter plot using the Year column as the x-axis and the CSIRO Adjusted Sea Level column as the y-axix.
+    Use the linregress function from scipy.stats to get the slope and y-intercept of the line of best fit. Plot the line of best fit over the top of the scatter plot. Make the line go through the year 2050 to predict the sea level rise in 2050.
+    Plot a new line of best fit just using the data from year 2000 through the most recent year in the dataset. Make the line also go through the year 2050 to predict the sea level rise in 2050 if the rate of rise continues as it has since the year 2000.
+    The x label should be Year, the y label should be Sea Level (inches), and the title should be Rise in Sea Level.
+
 
 Dataset Source
 
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
+Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Protection Agency using data from CSIRO, 2015; NOAA, 2015.
 
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [dsea_level_predictor.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
 
