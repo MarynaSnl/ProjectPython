@@ -20,7 +20,7 @@ Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Pr
 <hr>
 
 
-- [dsea_level_predictor.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [dsea_level_predictor.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/Sea_Level_Predictor/screen_test.png) - Solution.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
 
