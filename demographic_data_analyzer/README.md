@@ -1,16 +1,29 @@
-# Link for  my demo projects
+# Demographic Data Analyzer
 
 <hr>
-Data analysis, link:
+In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
+You must use Pandas to answer the following questions:
 
-https://marynasnl-my-demo-proj-my-python-streamlit-demo-1hkvpo.streamlitapp.com/
+    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
+    What is the average age of men?
+    What is the percentage of people who have a Bachelor's degree?
+    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
+    What percentage of people without advanced education make more than 50K?
+    What is the minimum number of hours a person works per week?
+    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
+    What country has the highest percentage of people that earn >50K and what is that percentage?
+    Identify the most popular occupation for those who earn >50K in India.
+
+Dataset Source
+
+Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
 
 <hr>
 
 
-- [Proj_2.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/Proj_2.py) - arithmetics examples, classes, some dataframe, read-write txt.
+- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/Proj_2.py) - the program.
 
-- [test2.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/test2.py) - tests for  Proj_2.py (Unittest)
+
 
 
 <hr>
