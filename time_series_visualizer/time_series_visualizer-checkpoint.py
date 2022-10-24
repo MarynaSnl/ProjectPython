@@ -92,7 +92,7 @@ def draw_box_plot():
 
     s2 = [datetime.strptime(x, "%m").strftime("%b") for x in sorted(df_box.month.unique())] 
     ax2.set_xticks(np.arange(12))
-    s2 = ax2.set_xticklabels(s2)
+    s2 = ax2.set_xticklabels(s2, rotation=180)
     
 
     # Save image and return fig (don't change this part)
