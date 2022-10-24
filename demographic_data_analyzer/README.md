@@ -21,7 +21,7 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: Unive
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/Proj_2.py) - Solution.
+- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
 
 - [screen_test.png](https://[github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png))  - Screenshot of testing results.
 
