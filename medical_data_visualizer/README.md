@@ -41,7 +41,7 @@ Use the data to complete the following tasks in medical_data_visualizer.py:
 <hr>
 
 
-- [medical_data_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [medical_data_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/medical_data_visualizer.py) - Solution.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
 
