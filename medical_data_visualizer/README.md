@@ -43,9 +43,9 @@ Use the data to complete the following tasks in medical_data_visualizer.py:
 
 - [medical_data_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/medical_data_visualizer.py) - Solution.
 
-- [catplot.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/medical_data_visualizer.py) - Catplot.
+- [catplot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/catplot.png) - Catplot.
 
-- [heatmap.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/medical_data_visualizer.py) - Heatmap.
+- [heatmap.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/heatmap.png) - Heatmap.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/medical_data_visualizer/screen_test.png)  - Screenshot of testing results.
 
