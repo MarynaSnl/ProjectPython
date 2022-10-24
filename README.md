@@ -1,4 +1,4 @@
-# Link for  my demo projects
+# Link for  demo project
 
 <hr>
 Data analysis, link:
