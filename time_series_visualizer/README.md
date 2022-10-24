@@ -1,27 +1,22 @@
-# Demographic Data Analyzer
+# Page View Time Series Visualize
 
 <hr>
-In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
-You must use Pandas to answer the following questions:
+For this project you will visualize time series data using a line chart, bar chart, and box plots. You will use Pandas, Matplotlib, and Seaborn to visualize a dataset containing the number of page views each day on the freeCodeCamp.org forum from 2016-05-09 to 2019-12-03. The data visualizations will help you understand the patterns in visits and identify yearly and monthly growth.
 
-    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
-    What is the average age of men?
-    What is the percentage of people who have a Bachelor's degree?
-    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
-    What percentage of people without advanced education make more than 50K?
-    What is the minimum number of hours a person works per week?
-    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
-    What country has the highest percentage of people that earn >50K and what is that percentage?
-    Identify the most popular occupation for those who earn >50K in India.
+Use the data to complete the following tasks:
 
-Dataset Source
+    Use Pandas to import the data from "fcc-forum-pageviews.csv". Set the index to the date column.
+    Clean the data by filtering out days when the page views were in the top 2.5% of the dataset or bottom 2.5% of the dataset.
+    Create a draw_line_plot function that uses Matplotlib to draw a line chart similar to "examples/Figure_1.png". The title should be Daily freeCodeCamp Forum Page Views 5/2016-12/2019. The label on the x axis should be Date and the label on the y axis should be Page Views.
+    Create a draw_bar_plot function that draws a bar chart similar to "examples/Figure_2.png". It should show average daily page views for each month grouped by year. The legend should show month labels and have a title of Months. On the chart, the label on the x axis should be Years and the label on the y axis should be Average Page Views.
+    Create a draw_box_plot function that uses Seaborn to draw two adjacent box plots similar to "examples/Figure_3.png". These box plots should show how the values are distributed within a given year or month and how it compares over time. The title of the first chart should be Year-wise Box Plot (Trend) and the title of the second chart should be Month-wise Box Plot (Seasonality). Make sure the month labels on bottom start at Jan and the x and y axis are labeled correctly. The boilerplate includes commands to prepare the data.
 
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
+For each chart, make sure to use a copy of the data frame. 
 
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [time_series_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
 
