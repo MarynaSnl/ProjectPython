@@ -16,11 +16,15 @@ For each chart, make sure to use a copy of the data frame.
 <hr>
 
 
-- [time_series_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [time_series_visualizer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/time_series_visualizer.py) - Solution.
 
-- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
+- [line_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Line plot.
 
+- [box_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Box plot.
 
+- [bar_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Bar plot.
+
+- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_series_visualizer/screen_test.png)  - Screenshot of testing results.
 
 
 <hr>
