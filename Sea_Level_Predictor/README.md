@@ -24,6 +24,8 @@ Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Pr
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/Sea_Level_Predictor/screen_test.png)  - Screenshot of testing results.
 
+- [sea_level_plot.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/Sea_Level_Predictor/screen_test.png)  - The scatter plot diagram.
+
 
 
 
