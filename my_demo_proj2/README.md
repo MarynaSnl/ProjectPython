@@ -1,31 +1,38 @@
-# Demographic Data Analyzer
+# Demo description
 
 <hr>
-In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
-You must use Pandas to answer the following questions:
+  Napisz aplikacje która będzie wspomagała zespół inżynierów i naukowców w ich zadaniach.
+Aplikacja ma składać sie z kilku funkcjonalności.
 
-    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
-    What is the average age of men?
-    What is the percentage of people who have a Bachelor's degree?
-    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
-    What percentage of people without advanced education make more than 50K?
-    What is the minimum number of hours a person works per week?
-    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
-    What country has the highest percentage of people that earn >50K and what is that percentage?
-    Identify the most popular occupation for those who earn >50K in India.
++ Musi posiadać menu, w którym na początku działania programu użytkownik może wybrać czy jest naukowcem, czy inżynierem.
++ Dla każdej z profesji będzie osobny zestaw funkcji
+	- naukowcy:
+		- oblicz BMI - wg klasycznego wzoru na BMI - wartości zmienne mają być wprowadzane przez użytkownika
+		- oblicz procent z danej liczby lub liczbę z danego procenta. Funckja ma dwa tryby działania. W pierwszej podajemy jakąś liczbę i sprawdzamy jakim procentem tej liczby jest inna liczba (podana jako drugi parametr- np. 100, 10 =  10%). W drugim przykładzie podajemy liczbę i procent i obliczamy jaką liczbą jest ten procent (100, 10%, wynik to liczba 10.)
+		- oblicz stężenie molowe roztworu. Użytkownik podaje dwie wartości - liczbę moli i objętość roztworu. Stężenie molowe to dzielnie moli przez objętość zgodnie ze wzorem - https://www.swiatchemii.pl/chemia-ogolna/stezenie-molowe-omowienie#:~:text=St%C4%99%C5%BCenie%20molowe%20wyra%C5%BCa%20si%C4%99%20jako,substancji%20rozpuszczonej%20do%20obj%C4%99to%C5%9Bci%20roztworu.&text=St%C4%99%C5%BCenie%20molowe%20jest%20to%20ilo%C5%9B%C4%87,%5Bmol%2Fdm3%5D.
+	
+	- Inżynierowie:
+		- oblicz pole i obwód okręgu - użytkownik podaje tylko promień zgodnie ze wzroem
+		- wypisz ciąg fibbonacciego do n elemetnu. https://matematyka.poznan.pl/artykul/ciag-fibonacciego-jako-test-pierwszosci/#:~:text=M%C3%B3wi%C4%85c%20%C5%9Bci%C5%9Blej%2C%20ci%C4%85g%20Fibonacciego%20jest,a2bn2.
+		czyli np fibbonacci(4) wypisze nam 0,1,1,2,3 - bo czwórki już w fibbonacim nie ma, a 5 jest za dużą wartością.
 
-Dataset Source
 
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
+Poziom zaawansowany zadania powyżej:
+
+	- do każdej funckji stwórz plik wynik_nazwa_funkcji.txt, gdzie będą zapisywane wszystkie wyniki, jeden pod drugim. Czyli np. funkcja oblicz_BMI będzie miała plik BMI.txt gdzie będą trafiały wyniki działań
+	- dopisz do funkcji oblicz pole i obwód okręgu funkcjonalnosć która umożliwi importowanie i obliczanie wielu promieni z pliku csv.
+
+
+Poziom maksymalny:
+	- zmodyfikuj pierwszy punkt z zadania zaawansowanego tak by w plikach zapisywały sie nie tylko wyniki ale wartości wejściowe. Czyli ktoś oblicza pole koła i wpisuje promień 4, to w pliku powinna się znaleźc linijka "4,wynik"
+
 
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+[Proj_2.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/Proj_2.py) - Solution.
 
-- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
-
-
+[test2.py](https://github.com/MarynaSnl/my_demo_proj/tree/main/my_demo_proj2/test2.py) - tests for  Proj_2.py (Unittest
 
 
 <hr>
