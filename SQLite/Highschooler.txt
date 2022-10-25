@@ -1,0 +1,1 @@
+create table Highschooler(ID int, name text, grade int);

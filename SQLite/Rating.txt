@@ -1,0 +1,2 @@
+
+create table Rating(rID int, mID int, stars int, ratingDate date);

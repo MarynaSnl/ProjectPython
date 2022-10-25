@@ -1,0 +1,2 @@
+create table Likes(ID1 int, ID2 int);
+

@@ -1,0 +1,2 @@
+
+create table Movie(mID int, title text, year int, director text);
