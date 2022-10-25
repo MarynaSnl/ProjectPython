@@ -29,3 +29,7 @@ The soluition link:
 
 <hr>
 
+- [sea_level_predictor.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/Sea_Level_Predictor/screen_test.png) - Solution.
+
+
+
