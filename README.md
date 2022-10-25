@@ -4,7 +4,7 @@
 
 - [Sea Level Predictor](https://github.com/MarynaSnl/my_demo_proj/tree/main/Sea_Level_Predictor) 
   
-  Analyze a dataset of the global average sea level change since 1880. You will use the data to predict the sea level change through year 2050. 
+  Analyze a dataset of the global average sea level change since 1880, using the data to predict the sea level change through year 2050. 
 
 - [Demographic Data Analyzer](https://github.com/MarynaSnl/my_demo_proj/tree/main/demographic_data_analyzer) 
 
