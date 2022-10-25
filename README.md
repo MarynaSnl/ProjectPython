@@ -29,7 +29,7 @@ The soluition link:
 
 <hr>
 
-- [my_python_streamlit_demo.py]([https://github.com/MarynaSnl/my_demo_proj/blob/main/Sea_Level_Predictor/screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/my_python_streamlit_demo.py)) - Solution.
+- [my_python_streamlit_demo.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/my_python_streamlit_demo.py) - Solution.
 
 
 
