@@ -1,10 +1,10 @@
-# My demo projects'
+# My demo projects
 
 <hr>
 
+- [demographic_data_analyzer](https://github.com/MarynaSnl/my_demo_proj/tree/main/demographic_data_analyzer) 
+
+
 <hr>
-
-- [my_python_streamlit_demo.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/my_python_streamlit_demo.py) - Solution.
-
 
 
