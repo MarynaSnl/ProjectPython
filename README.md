@@ -25,7 +25,7 @@ Napisz program do analizy danych.
 
 The soluition link:
 
-https://marynasnl-my-demo-proj-my-python-streamlit-demo-1hkvpo.streamlitapp.com/
+[https://marynasnl-my-demo-proj-my-python-streamlit-demo-1hkvpo.streamlitapp.com/](https://marynasnl-my-demo-proj-my-python-streamlit-demo-o1zheg.streamlitapp.com/)
 
 <hr>
 
