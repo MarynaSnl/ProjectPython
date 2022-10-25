@@ -24,7 +24,8 @@
 
 - [Program do analizy danych (Pl)](https://github.com/MarynaSnl/my_demo_proj/tree/main/python_streamlit_demo) 
 
-  Program do analizy danych (pl)
+  Program do analizy danych (pl).  Web application using the library Streamlit.
+
 
 - [Page View Time Series Visualize](https://github.com/MarynaSnl/my_demo_proj/tree/main/time_series_visualizer) 
 
