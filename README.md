@@ -31,6 +31,10 @@
 
   Visualizing time series data using a line chart, bar chart, and box plots, using Pandas, Matplotlib, and Seaborn to visualize a dataset containing the   number of page views each day on the freeCodeCamp.org forum from 2016-05-09 to 2019-12-03. The data visualizations will help you understand the patterns in visits and identify yearly and monthly growth.  
 
+- [SQLite](https://github.com/MarynaSnl/my_demo_proj/tree/main/SQLite) 
+
+  SQLite examples.
+
 <hr>
 
 
