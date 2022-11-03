@@ -37,7 +37,7 @@ Do not import any Python libraries. Assume that the start times are valid times.
 <hr>
 
 
-- [time calculator.pyy](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_calculator/time_calculator.py) - Solution.
+- [time calculator.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_calculator/time_calculator.py) - Solution.
 
 - [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_calculator/screen_test.png)  - Screenshot of testing results.
 
