@@ -1,29 +1,58 @@
-# Demographic Data Analyzer
+# Arithmetic Formatter
 
 <hr>
-In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
-You must use Pandas to answer the following questions:
+Students in primary school often arrange arithmetic problems vertically to make them easier to solve. For example, "235 + 52" becomes:
 
-    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
-    What is the average age of men?
-    What is the percentage of people who have a Bachelor's degree?
-    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
-    What percentage of people without advanced education make more than 50K?
-    What is the minimum number of hours a person works per week?
-    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
-    What country has the highest percentage of people that earn >50K and what is that percentage?
-    Identify the most popular occupation for those who earn >50K in India.
+  235
++  52
+-----
 
-Dataset Source
+Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to True, the answers should be displayed.
+Example
 
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
+Function Call:
+
+arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
+
+Output:
+
+   32      3801      45      123
++ 698    -    2    + 43    +  49
+-----    ------    ----    -----
+
+Function Call:
+
+arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
+
+Output:
+
+  32         1      9999      523
++  8    - 3801    + 9999    -  49
+----    ------    ------    -----
+  40     -3800     19998      474
+
+Rules
+
+The function will return the correct conversion if the supplied problems are properly formatted, otherwise, it will return a string that describes an error that is meaningful to the user.
+
+    Situations that will return an error:
+        If there are too many problems supplied to the function. The limit is five, anything more will return: Error: Too many problems.
+        The appropriate operators the function will accept are addition and subtraction. Multiplication and division will return an error. Other operators not mentioned in this bullet point will not need to be tested. The error returned will be: Error: Operator must be '+' or '-'.
+        Each number (operand) should only contain digits. Otherwise, the function will return: Error: Numbers must only contain digits.
+        Each operand (aka number on each side of the operator) has a max of four digits in width. Otherwise, the error string returned will be: Error: Numbers cannot be more than four digits.
+    If the user supplied the correct format of problems, the conversion you return will follow these rules:
+        There should be a single space between the operator and the longest of the two operands, the operator will be on the same line as the second operand, both operands will be in the same order as provided (the first will be the top one and the second will be the bottom).
+        Numbers should be right-aligned.
+        There should be four spaces between each problem.
+        There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually. (The example above shows what this should look like.)
+
 
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [arithmetic_arranger.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/arithmetic_arranger/arithmetic_arranger.py) - Solution.
 
-- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
+- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/arithmetic_arranger/screen_test.png)  - Screenshot of testing results.
 
 
 
