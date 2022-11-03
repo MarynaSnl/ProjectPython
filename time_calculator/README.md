@@ -1,29 +1,45 @@
-# Demographic Data Analyzer
+# Time Calculator
 
 <hr>
-In this challenge you must analyze demographic data using Pandas. You are given a dataset of demographic data that was extracted from the 1994 Census database. 
-You must use Pandas to answer the following questions:
+Write a function named add_time that takes in two required parameters and one optional parameter:
 
-    How many people of each race are represented in this dataset? This should be a Pandas series with race names as the index labels. (race column)
-    What is the average age of men?
-    What is the percentage of people who have a Bachelor's degree?
-    What percentage of people with advanced education (Bachelors, Masters, or Doctorate) make more than 50K?
-    What percentage of people without advanced education make more than 50K?
-    What is the minimum number of hours a person works per week?
-    What percentage of the people who work the minimum number of hours per week have a salary of more than 50K?
-    What country has the highest percentage of people that earn >50K and what is that percentage?
-    Identify the most popular occupation for those who earn >50K in India.
+    a start time in the 12-hour clock format (ending in AM or PM)
+    a duration time that indicates the number of hours and minutes
+    (optional) a starting day of the week, case insensitive
 
-Dataset Source
+The function should add the duration time to the start time and return the result.
 
-Dua, D. and Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science.
+If the result will be the next day, it should show (next day) after the time. If the result will be more than one day later, it should show (n days later) after the time, where "n" is the number of days later.
 
+If the function is given the optional starting day of the week parameter, then the output should display the day of the week of the result. The day of the week in the output should appear after the time and before the number of days later.
+
+Below are some examples of different cases the function should handle. Pay close attention to the spacing and punctuation of the results.
+
+add_time("3:00 PM", "3:10")
+# Returns: 6:10 PM
+
+add_time("11:30 AM", "2:32", "Monday")
+# Returns: 2:02 PM, Monday
+
+add_time("11:43 AM", "00:20")
+# Returns: 12:03 PM
+
+add_time("10:10 PM", "3:30")
+# Returns: 1:40 AM (next day)
+
+add_time("11:43 PM", "24:20", "tueSday")
+# Returns: 12:03 AM, Thursday (2 days later)
+
+add_time("6:30 PM", "205:12")
+# Returns: 7:42 AM (9 days later)
+
+Do not import any Python libraries. Assume that the start times are valid times. The minutes in the duration time will be a whole number less than 60, but the hour can be any whole number.
 <hr>
 
 
-- [demographic_data_analyzer.py](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/demographic_data_analyzer.py) - Solution.
+- [time calculator.pyy](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_calculator/time_calculator.py) - Solution.
 
-- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/demographic_data_analyzer/screen_test.png)  - Screenshot of testing results.
+- [screen_test.png](https://github.com/MarynaSnl/my_demo_proj/blob/main/time_calculator/screen_test.png)  - Screenshot of testing results.
 
 
 
