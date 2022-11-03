@@ -35,6 +35,31 @@
 
   SQLite examples.
 
+- [Budget App](https://github.com/MarynaSnl/my_demo_proj/tree/main/Budget_App) 
+
+  Complete the Category class in budget.py. It should be able to instantiate objects based on different budget categories like food, clothing, and entertainment.
+
+- [Polygon Area Calculator](https://github.com/MarynaSnl/my_demo_proj/tree/main/Polygon_Area_Calculator) 
+
+  In this project you will use object oriented programming to create a Rectangle class and a Square class. The Square class should be a subclass of Rectangle and inherit methods and attributes.
+
+- [Arithmetic Formatter](https://github.com/MarynaSnl/my_demo_proj/tree/main/arithmetic_arranger) 
+
+  Students in primary school often arrange arithmetic problems vertically to make them easier to solve. Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to True, the answers should be displayed.
+  
+- [Probability Calculator](https://github.com/MarynaSnl/my_demo_proj/tree/main/ProbabilityCalculator) 
+
+  For this project, you will write a program to determine the approximate probability of drawing certain balls randomly from a hat.
+
+- [Time Calculator](https://github.com/MarynaSnl/my_demo_proj/tree/main/time_calculator) 
+
+  Write a function named add_time that takes in two required parameters and one optional parameter:
+    a start time in the 12-hour clock format (ending in AM or PM)
+    a duration time that indicates the number of hours and minutes
+    (optional) a starting day of the week, case insensitive
+
+
+
 <hr>
 
 
